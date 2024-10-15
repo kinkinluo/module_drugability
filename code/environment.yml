@@ -1,0 +1,23 @@
+name: protein_gcn
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - tqdm
+  - jupyter
+  - pytorch
+  - torchvision
+  - torchaudio
+  - cpuonly
+  - pip
+  - pip:
+    - torch-scatter -f https://data.pyg.org/whl/torch-2.4.1+cpu.html
+    - torch-sparse -f https://data.pyg.org/whl/torch-2.4.1+cpu.html
+    - torch-cluster -f https://data.pyg.org/whl/torch-2.4.1+cpu.html
+    - torch-spline-conv -f https://data.pyg.org/whl/torch-2.4.1+cpu.html
+    - torch-geometric
